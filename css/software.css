@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+.image{
+   background-image:url(../images/software.jpg);
+   width: 100vw;
+   height: 400px;
+   background-size: cover;
+}
+.maintext{
+    padding-top: 100px;
+  
+}
+.maintext a{
+   
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    text-align: center;
+    color: rgb(58, 21, 223);
+    font-size: 6pc;
+}
+.navbar{
+    background-color: rgb(62, 86, 224);
+    display: block;
+    overflow: hidden;
+    height: 40px;
+    }
+.navbar li{
+    display:inline-block;
+    padding: 15px;
+   } 
+.navbar li a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+} 
+.navbar li :hover{
+    background-color: rgb(153, 43, 226);
+
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;  
+    background-color: rgb(153, 43, 226);
+   }
+.dropdown-content a {
+    color: rgb(88, 125, 228);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {background-color:rgb(88, 125, 228);;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.text{
+    
+    font-family: 'Noto Sans';
+    text-align: justify;
+    padding-left:1%;
+    
+}
+.text p{
+    padding-left:2%;
+}
+h2{
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(23, 23, 163);
+   
+}
+.text ul{
+    padding-left:5%;
+}
+.text ol{
+    padding-left:5%;
+}
+.text ul li{
+    color:rgb(117, 24, 136) ;
+}
+.text ol li{
+    color: rgb(117, 24, 136);
+}
+.sss li{
+    color: black;
+}
+@media screen and (max-width: 800px){
+    .image{
+        background-position: 100% 300%;
+    }
+    .maintext{
+        padding-top: 150px;
+      
+    }
+    .maintext a{
+   
+        text-decoration: none;
+        font-family: 'Noto Sans';
+        text-align: center;
+        color: rgb(58, 21, 223);
+        font-size: 3pc;
+    }
+}
+@media screen and (max-width: 600px){
+    .image{
+        background-position: 100% 300%;
+    }
+    .maintext{
+        padding-top: 150px;
+      
+    }
+    .maintext a{
+   
+        text-decoration: none;
+        font-family: 'Noto Sans';
+        text-align: center;
+        color: rgb(58, 21, 223);
+        font-size: 3pc;
+    }
+}

@@ -1,0 +1,144 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family:'Noto Sans', sans-serif;
+}
+h1{
+    color: white;
+    
+}
+.navbar{
+    
+    overflow: hidden;
+    background-color: rgb(12, 85, 241);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.navbar li{
+    display: inline-block;
+    padding: 10px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+
+}
+.show p{
+  
+    font-size: 35px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(12, 85, 241);
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.sub-container {
+  width: 48.5vw;
+  padding: 5px;
+}
+.sub-container p{
+    height: 27.8vw;
+    animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
+    line-height: 2.6;
+    border-radius: 10px;
+    margin: auto;
+    --border-size: 0.3rem;
+     border: var(--border-size) solid transparent;
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg
+    )
+    1 stretch;
+  background: rgb(255 255 255 / var(--opacity));
+}
+.sub-container img{
+  border: 3px solid greenyellow;
+  width: 48vw;
+}
+h2{
+  text-align: center;
+  background-color: #fbb300;
+}
+.last{
+  text-align: justify;
+  font-family:'Noto Sans', sans-serif;
+  line-height: 1.5;
+}
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @keyframes opacityChange {
+    to {
+      --opacity: 1;
+    }
+  }
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+ 
+  @media screen and (max-width: 600px) {
+    h1{
+      font-size: 20px;
+      padding-top: 25px;
+    }
+    .navbar ul li a{
+      font-size: 15px;
+      
+    }
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .sub-container {
+      width: 100vw;
+    } 
+    .sub-container p{
+      height: 95vw;
+    }
+    .sub-container img{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    h1{
+      font-size: 20px;
+      padding-top: 25px;
+    }
+    .navbar ul li a{
+      font-size: 15px;
+      
+    }
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .sub-container {
+      width: 100vw;
+    } 
+    .sub-container p{
+      height: 50vw;
+    }
+    .sub-container img{
+      width: 100%;
+    }
+  }
+  
+
+  
